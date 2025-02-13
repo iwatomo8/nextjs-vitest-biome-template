@@ -13,7 +13,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": "pnpm run check"
+    "**/*.{js,jsx,ts,tsx,json}": "pnpm run check"
   },
   "dependencies": {
     "next": "15.1.6",
