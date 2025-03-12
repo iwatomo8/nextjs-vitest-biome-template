@@ -5,6 +5,7 @@
 
 `lefthook`（pre-commit, pre-push時にlintやtestを行うツール）のインストール
 - 例：`brew install lefthook`
+- リポジトリ作成時に`lefthook install`で`.husky`ディレクトリが作られる
 
 依存ライブラリのインストール：`pnpm i`
 
