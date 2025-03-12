@@ -1,0 +1,14 @@
+pre-commit:
+  parallel: true
+  commands:
+    biome:
+      glob: '*.{js,jsx,ts,tsx,mjs,cjs,mts,mcs}'
+      run: pnpm run check {staged_files}
+      stage_fixed: true # lintで変更があったときにaddする
+      skip:
+        - merge
+        - rebase
+
+pre-push:
+  jobs:
+    - run: pnpm run test
