@@ -13,5 +13,7 @@ pre-commit:
       run: pnpm tsc
 
 pre-push:
-  jobs:
-    - run: pnpm run test
+  parallel: true
+  commands:
+    vitest:
+      run: pnpm run test
