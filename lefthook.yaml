@@ -8,6 +8,9 @@ pre-commit:
       skip:
         - merge
         - rebase
+    type-check:
+      glob: "**/*.{ts,tsx}"
+      run: pnpm tsc
 
 pre-push:
   jobs:
